@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/addHotel.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/73c58b7ad8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">Hotéis</a>
+                        <ul class="dropdown">
+                            <li><a href="addHotel.html">Adicionar Hotel</a></li>
+                            <li><a href="findHotel.html">Buscar hotéis por cidade</a></li>
+                            <li><a href="report.html">Gerar relatórios de ocupação</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Reservas</a>
+                        <ul class="dropdown">
+                            <li><a href="doReserva.html">Fazer reserva</a></li>
+                            <li><a href="cancelReserva.html">Cancelar reserva</a></li>
+                            <li><a href="listarReserva.html">Listar reservas</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Avaliações</a>
+                        <ul class="dropdown">
+                            <li><a href="avaliar.html">Avaliar hotéis</a></li>
+                        </ul>
+                    </li>
+            </ul>
+        </header>
+
+        <main>
+            <h1 id="addHotelH1">Adicionar Hotel</h1>
+                <form id="hotelForm">
+                    <label for="hotelName">Nome do Hotel:</label>
+                    <input placeholder="Insira o nome do hotel..." type="text" name="hotelName" id="hotelName">
+
+                    <label for="cidadeHotel">Cidade do Hotel:</label>
+                    <input placeholder="Insira a cidade do hotel..." type="text" name="cidadeHotel" id="cidadeHotel">
+
+                    <label for="quartosHotel">Quartos totais:</label>
+                    <input placeholder="Insira o número..." type="number" name="quartosHotel" id="quartosHotel">
+
+                    <label for="quartosDisp">Quartos disponíveis:</label>
+                    <input placeholder="Insira o número..." type="number" name="quartosDisp" id="quartosDisp">
+
+                    <button onclick="validarForm()" type="button">Adicionar Hotel</button>
+                </form>
+        </main>
+    </div>
+
+    <script src="js/addHotel.js"></script>
+</body>
+</html>

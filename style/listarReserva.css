@@ -1,0 +1,56 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#reservaFormDiv,
+#reservaForm label,
+#reservaForm input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#listaReservasH1 {
+    color: #53a8b6;
+    font-size: 5rem;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+#reservaForm {
+    max-width: 400px;
+    font-size: 2rem;
+    background-color: #79c2d0;
+    box-shadow: 5px 5px 10px #888888;
+    padding: 20px 25px;
+    text-align: center;
+    color: #FFF;
+}
+
+#reservaForm button {
+    align-self: center;
+    background: #53a8b6;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    color: #FFF;
+}
+
+#listaReservas {
+    margin-top: 30px;
+    padding: 20px 40px;
+    font-size: 2rem;
+    list-style-type: none;
+    display: none;
+}
+
+#listaReservas li {
+    color: #FFF;
+    margin-bottom: 20px;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+}
+
