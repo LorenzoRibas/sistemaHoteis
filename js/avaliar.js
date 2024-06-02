@@ -22,4 +22,5 @@
                 alert("Nenhum hotel encontrado.");
             }
         }
+        document.getElementById('hotelForm').reset();
     }

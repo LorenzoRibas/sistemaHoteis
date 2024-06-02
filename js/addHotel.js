@@ -43,5 +43,7 @@ function adicionarHotel() {
 
     localStorage.setItem('hotels', JSON.stringify(savedHotels));
 
+    alert("Hotel adicionado com sucesso.");
+
     form.reset();
 }

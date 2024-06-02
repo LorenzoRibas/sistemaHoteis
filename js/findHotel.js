@@ -24,7 +24,7 @@ function exibirHoteisEncontrados(hoteisEncontrados) {
             hotel.mediaAvaliacao = 'N/A';
         } else {
             const totalAvaliacoes = hotel.avaliacoes.reduce((sum, val) => sum + val, 0);
-            hotel.mediaAvaliacao = (totalAvaliacoes / hotel.avaliacoes.length).toFixed(2);
+            hotel.mediaAvaliacao = (totalAvaliacoes / hotel.avaliacoes.length).toFixed(1);
         }
 
         const itemLista = document.createElement('li');

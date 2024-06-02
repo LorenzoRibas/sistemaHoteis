@@ -6,8 +6,12 @@ function listarReserva() {
     const listaReservas = document.getElementById('listaReservas');
     listaReservas.innerHTML = '';
 
+    if (!hotelName){
+        alert("Por favor, preencha todos os campos.");
+    } else {
+
     if (savedReservas.length === 0) {
-        listaReservas.innerHTML = '<li>Nenhuma reserva encontrada.</li>';
+        alert("Nenhuma reserva encontrada.");
         return;
     }
 
@@ -17,7 +21,7 @@ function listarReserva() {
     });
 
     if (reservasFiltradas.length === 0) {
-        listaReservas.innerHTML = '<li>Nenhuma reserva encontrada para este hotel.</li>';
+        alert("Nenhuma reserva encontrada para este hotel.");
         return;
     }
 
@@ -36,4 +40,4 @@ function listarReserva() {
 
         }
     });
-}
+}}
